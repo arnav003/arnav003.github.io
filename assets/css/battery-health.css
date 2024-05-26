@@ -59,14 +59,14 @@ header {
     opacity: 0.6;
 }
 
-.features, .why, .testimonial, .download {
+.features, .why, .testimonial, .download, .feedback {
     padding: 80px 20px;
     text-align: center;
     background: white;
     margin-bottom: 20px;
 }
 
-.features h2, .why h2, .testimonial h2, .download h2 {
+.features h2, .why h2, .testimonial h2, .download h2, .feedback h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #007bff;
@@ -100,17 +100,18 @@ header {
 .btn {
     display: inline-block;
     padding: 15px 30px;
+    font-size: 1.2rem;
     color: white;
-    background: #28a745;
+    background: #007bff;
     border: none;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 1rem;
     transition: background 0.3s ease;
+    margin-top: 20px;
 }
 
 .btn:hover {
-    background: #218838;
+    background: #0056b3;
 }
 
 .btn.secondary {
@@ -121,9 +122,47 @@ header {
     background: #5a6268;
 }
 
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 footer {
     background: #343a40;
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
