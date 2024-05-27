@@ -18,6 +18,7 @@
         <a href="#download" class="btn">Download Now</a>
     </div>
     <div class="parallax"></div>
+    <div class="overlay"></div>
 </header>
 
 <section id="features" class="features" data-aos="fade-up">
@@ -25,24 +26,30 @@
         <h2>Key Features That Matter to You</h2>
         <div class="features-grid">
             <div class="feature">
-                <i class="fa-solid fa-chart-line fa-3x"></i>
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-chart-line fa-3x"></i>
+                </div>
                 <h3>Interactive Data Visualization</h3>
                 <p>Easily interpret battery capacity and life estimates through interactive plots and graphs.</p>
             </div>
             <div class="feature">
-                <i class="fa-solid fa-file-alt fa-3x"></i>
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-file-alt fa-3x"></i>
+                </div>
                 <h3>Comprehensive Reports</h3>
-                <p>Get detailed insights into your battery's health, capacity history, and life estimates with data
-                    extracted from reliable system reports.</p>
+                <p>Get detailed insights into your battery's health, capacity history, and life estimates with data extracted from reliable system reports.</p>
             </div>
             <div class="feature">
-                <i class="fa-solid fa-laptop-code fa-3x"></i>
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-laptop-code fa-3x"></i>
+                </div>
                 <h3>User-Friendly Interface</h3>
-                <p>Navigate seamlessly through an intuitive dashboard designed with PyQt6, featuring clearly labeled
-                    tables and plots.</p>
+                <p>Navigate seamlessly through an intuitive dashboard designed with PyQt6, featuring clearly labeled tables and plots.</p>
             </div>
             <div class="feature">
-                <i class="fa-solid fa-battery-full fa-3x"></i>
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-battery-full fa-3x"></i>
+                </div>
                 <h3>Battery Health Indicator</h3>
                 <p>Instantly see your battery's health percentage displayed with a prominent green icon.</p>
             </div>
@@ -112,7 +119,7 @@
         </div>
 
         <!-- Comparison Table -->
-        <div class="comparison-table">
+        <div class="comparison-table" data-aos="fade-up">
             <h2>Compare with Other Tools</h2>
             <table>
                 <thead>
@@ -148,7 +155,7 @@
         </div>
 
         <!-- Call to Action -->
-        <div class="cta">
+        <div class="cta" data-aos="fade-up">
             <a href="#download" class="btn btn-primary">Download Now</a>
         </div>
     </div>
@@ -157,22 +164,19 @@
 <section id="download" class="download" data-aos="fade-up">
     <div class="container">
         <h2>Get Started Today</h2>
-        <p>Don’t let battery issues hold you back. Download the Battery Health Report Generator now and take the first
-            step towards smarter, more informed battery management.</p>
+        <p>Don’t let battery issues hold you back. Download the Battery Health Report Generator now and take the first step towards smarter, more informed battery management.</p>
         <div class="download-cards">
             <div class="card">
                 <h3>Version 1.5.0</h3>
                 <p>Latest features and improvements</p>
-                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.5.0" class="btn"
-                   target="_blank">
+                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.5.0" class="btn" target="_blank">
                     <i class="fas fa-download"></i> Download Now v1.5.0
                 </a>
             </div>
             <div class="card">
                 <h3>Version 1.0.0</h3>
                 <p>Older release version</p>
-                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.0.0" class="btn"
-                   target="_blank">
+                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.0.0" class="btn" target="_blank">
                     <i class="fas fa-download"></i> Download Now v1.0.0
                 </a>
             </div>
@@ -225,9 +229,9 @@
     AOS.init();
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         function smoothScrollTo(target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({behavior: 'smooth'});
         }
 
         function scrollToHash() {
@@ -244,7 +248,7 @@
 
         // Add smooth scroll behavior for all internal links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 var target = document.querySelector(this.getAttribute('href'));
                 if (target) {
