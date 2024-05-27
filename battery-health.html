@@ -52,28 +52,100 @@
 <section id="why" class="why" data-aos="fade-up">
     <div class="container">
         <h2>Why You Need the Battery Health Report Generator</h2>
-        <p>Laptops are a lifeline for many, whether you're working from home, studying for exams, or enjoying your
-            favorite content. Unexpected battery failures can disrupt your workflow and productivity. Our app ensures
-            you are never caught off guard by providing real-time and historical data about your battery's
-            performance.</p>
+        <p>Laptops are a lifeline for many, whether you're working from home, studying for exams, or enjoying your favorite content. Unexpected battery failures can disrupt your workflow and productivity. Our app ensures you are never caught off guard by providing real-time and historical data about your battery's performance.</p>
+
+        <!-- Use Cases -->
+        <div class="use-cases">
+            <div class="case">
+                <h3>Students</h3>
+                <p>Ensure your laptop lasts through long study sessions and exams without unexpected shutdowns.</p>
+            </div>
+            <div class="case">
+                <h3>Professionals</h3>
+                <p>Maintain productivity during important meetings and work sessions by monitoring battery health.</p>
+            </div>
+            <div class="case">
+                <h3>Travelers</h3>
+                <p>Keep track of battery performance on the go, ensuring your device is ready when you need it most.</p>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+<!--        <div class="testimonials">-->
+<!--            <h2>What Our Users Say</h2>-->
+<!--            <div class="testimonial">-->
+<!--                <p>"With the Battery Health Report Generator, I finally have a clear picture of my laptop's battery health. The interactive plots and easy-to-read reports have been game-changing for my daily productivity." - Alex, Software Developer</p>-->
+<!--            </div>-->
+<!--            <div class="testimonial">-->
+<!--                <p>"This tool has helped me understand and manage my battery life better, making my laptop usage more efficient." - Maria, Student</p>-->
+<!--            </div>-->
+<!--        </div>-->
+
+        <!-- Comparison Table -->
+        <div class="comparison-table">
+            <h2>Compare with Other Tools</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Battery Health Report Generator</th>
+                    <th>Other Tools</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Real-Time Monitoring</td>
+                    <td>✔</td>
+                    <td>✘</td>
+                </tr>
+                <tr>
+                    <td>Historical Data</td>
+                    <td>✔</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <td>Interactive Visualizations</td>
+                    <td>✔</td>
+                    <td>✘</td>
+                </tr>
+                <tr>
+                    <td>User-Friendly Interface</td>
+                    <td>✔</td>
+                    <td>✘</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </section>
 
 <section id="download" class="download" data-aos="fade-up">
     <div class="container">
         <h2>Get Started Today</h2>
-        <p>Don’t let battery issues hold you back. Download the Battery Health Report Generator now and take the first
-            step towards smarter, more informed battery management.</p>
-        <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.5.0" class="btn"
-           target="_blank">Download Now</a>
-        <!--        <a href="#" class="btn secondary">Contact Support</a>-->
+        <p>Don’t let battery issues hold you back. Download the Battery Health Report Generator now and take the first step towards smarter, more informed battery management.</p>
+        <div class="download-cards">
+            <div class="card">
+                <h3>Version 1.5.0</h3>
+                <p>Latest features and improvements</p>
+                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.5.0" class="btn" target="_blank">
+                    <i class="fas fa-download"></i> Download Now v1.5.0
+                </a>
+            </div>
+            <div class="card">
+                <h3>Version 1.0.0</h3>
+                <p>Older release version</p>
+                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.0.0" class="btn" target="_blank">
+                    <i class="fas fa-download"></i> Download Now v1.0.0
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
-<section id="feedback" class="feedback" data-aos="fade-up">
+<section class="feedback">
     <div class="container">
-        <h2>We'd Love to Hear Your Feedback</h2>
-        <p>Please fill out the form below to let us know how we're doing.</p>
+        <h2>We Value Your Feedback</h2>
+        <p>Please let us know your thoughts about the Battery Health Report Generator. Your feedback helps us improve!</p>
         <form id="feedbackForm">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -86,16 +158,17 @@
             <div class="form-group">
                 <label for="rating">Rating</label>
                 <select id="rating" name="rating" required>
+                    <option value="" disabled selected>Select your rating</option>
                     <option value="5">5 - Excellent</option>
                     <option value="4">4 - Good</option>
                     <option value="3">3 - Average</option>
-                    <option value="2">2 - Poor</option>
-                    <option value="1">1 - Very Poor</option>
+                    <option value="2">2 - Below Average</option>
+                    <option value="1">1 - Poor</option>
                 </select>
             </div>
             <div class="form-group">
                 <label for="comments">Comments</label>
-                <textarea id="comments" name="comments" rows="5" required></textarea>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
             </div>
             <button type="submit" class="btn">Submit Feedback</button>
         </form>
