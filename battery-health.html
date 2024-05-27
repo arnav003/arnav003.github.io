@@ -224,6 +224,39 @@
 <script>
     AOS.init();
 </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        function smoothScrollTo(target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollToHash() {
+            if (window.location.hash) {
+                var target = document.querySelector(window.location.hash);
+                if (target) {
+                    smoothScrollTo(target);
+                }
+            }
+        }
+
+        // Scroll to hash if present on initial load
+        scrollToHash();
+
+        // Add smooth scroll behavior for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    smoothScrollTo(target);
+                }
+            });
+        });
+
+        // Listen for hash change event (e.g., when using back/forward browser buttons)
+        window.addEventListener('hashchange', scrollToHash);
+    });
+</script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
