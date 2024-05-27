@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -59,27 +63,34 @@ header {
     opacity: 0.6;
 }
 
-.features, .why, .testimonial, .download, .feedback {
+.features, .why, .download, .feedback {
     padding: 80px 20px;
     text-align: center;
     background: white;
     margin-bottom: 20px;
 }
 
-.features h2, .why h2, .testimonial h2, .download h2, .feedback h2 {
+.features h2, .why h2, .download h2, .feedback h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     color: #007bff;
 }
 
-.features-grid {
+.features .container {
+    position: relative;
+    max-width: 60vw;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.features .features-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
 }
 
-.feature {
+.features .feature {
     flex: 1 1 300px;
     background: #f1f1f1;
     padding: 20px;
@@ -88,11 +99,11 @@ header {
     transition: transform 0.3s ease;
 }
 
-.feature:hover {
+.features .feature:hover {
     transform: translateY(-10px);
 }
 
-.feature i {
+.features .feature i {
     color: #007bff;
     margin-bottom: 20px;
 }
@@ -104,15 +115,36 @@ header {
     text-align: center;
 }
 
+.why {
+    background: url('../../images/background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.why::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .why .container {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    z-index: 1;
 }
 
 .why h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .why p {
@@ -132,28 +164,88 @@ header {
 }
 
 .use-cases .case {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
     flex: 1;
     max-width: calc(33% - 20px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s;
 }
 
-.testimonials h2, .comparison-table h2 {
+.use-cases .case i {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.use-cases .case:hover {
+    transform: translateY(-10px);
+}
+
+.testimonials {
+    text-align: center;
+    padding: 60px 0;
+    /*background: rgba(255, 255, 255, 0.1);*/
+}
+
+.testimonials h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.testimonials .swiper-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.testimonials .swiper-wrapper {
+    display: flex;
+}
+
+.testimonials .swiper-slide {
+    font-size: 1.2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.testimonials .swiper-slide p {
+    margin: 0;
+    line-height: 1.5;
+    max-width: 600px
+}
+
+.testimonials .swiper-button-next,
+.testimonials .swiper-button-prev {
+    color: #0056b3;
+}
+
+.testimonials .swiper-pagination-bullet {
+    background: #007bff;
+}
+
+.testimonials .swiper-pagination-bullet-active {
+    background: #0056b3;
+}
+
+.comparison-table h2 {
     font-size: 2em;
     margin-bottom: 20px;
-}
-
-.testimonials .testimonial {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: left;
 }
 
 .comparison-table {
@@ -169,6 +261,7 @@ header {
 
 .comparison-table table, .comparison-table th, .comparison-table td {
     border: 1px solid #ddd;
+    color: #fff;
 }
 
 .comparison-table th, .comparison-table td {
@@ -178,11 +271,28 @@ header {
 
 .comparison-table th {
     background: #007bff;
-    color: #fff;
 }
 
 .comparison-table td {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cta {
+    margin-top: 40px;
+}
+
+.cta .btn {
+    background: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.cta .btn:hover {
+    background: #0056b3;
 }
 
 @media (max-width: 768px) {

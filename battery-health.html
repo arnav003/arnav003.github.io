@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
 <header class="header">
@@ -52,34 +53,63 @@
 <section id="why" class="why" data-aos="fade-up">
     <div class="container">
         <h2>Why You Need the Battery Health Report Generator</h2>
-        <p>Laptops are a lifeline for many, whether you're working from home, studying for exams, or enjoying your favorite content. Unexpected battery failures can disrupt your workflow and productivity. Our app ensures you are never caught off guard by providing real-time and historical data about your battery's performance.</p>
+        <p>Laptops are a lifeline for many, whether you're working from home, studying for exams, or enjoying your
+            favorite content. Unexpected battery failures can disrupt your workflow and productivity. Our app ensures
+            you are never caught off guard by providing real-time and historical data about your battery's
+            performance.</p>
 
         <!-- Use Cases -->
         <div class="use-cases">
             <div class="case">
+                <i class="fas fa-graduation-cap"></i>
                 <h3>Students</h3>
                 <p>Ensure your laptop lasts through long study sessions and exams without unexpected shutdowns.</p>
             </div>
             <div class="case">
+                <i class="fas fa-briefcase"></i>
                 <h3>Professionals</h3>
                 <p>Maintain productivity during important meetings and work sessions by monitoring battery health.</p>
             </div>
             <div class="case">
+                <i class="fas fa-plane"></i>
                 <h3>Travelers</h3>
                 <p>Keep track of battery performance on the go, ensuring your device is ready when you need it most.</p>
             </div>
         </div>
 
         <!-- Testimonials -->
-<!--        <div class="testimonials">-->
-<!--            <h2>What Our Users Say</h2>-->
-<!--            <div class="testimonial">-->
-<!--                <p>"With the Battery Health Report Generator, I finally have a clear picture of my laptop's battery health. The interactive plots and easy-to-read reports have been game-changing for my daily productivity." - Alex, Software Developer</p>-->
-<!--            </div>-->
-<!--            <div class="testimonial">-->
-<!--                <p>"This tool has helped me understand and manage my battery life better, making my laptop usage more efficient." - Maria, Student</p>-->
-<!--            </div>-->
-<!--        </div>-->
+        <div class="testimonials" data-aos="fade-up">
+            <h2>What Our Users Say</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p><i class="fas fa-quote-left"></i> I use powercfg every once in a while to examine battery
+                            capacity.
+                            This is a nice useful project. <i class="fas fa-quote-right"></i> - Abhinav, Student</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p><i class="fas fa-quote-left"></i> Amazing! <i class="fas fa-quote-right"></i> - Eshaan,
+                            Student
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p><i class="fas fa-quote-left"></i> Very promising! The dark theme feature looks appealing. <i
+                                class="fas fa-quote-right"></i> - Devansh, Student
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p><i class="fas fa-quote-left"></i> Innovative! <i class="fas fa-quote-right"></i> - Priyanshu,
+                            Student
+                        </p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
 
         <!-- Comparison Table -->
         <div class="comparison-table">
@@ -95,26 +125,31 @@
                 <tbody>
                 <tr>
                     <td>Real-Time Monitoring</td>
-                    <td>✔</td>
-                    <td>✘</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
                 </tr>
                 <tr>
                     <td>Historical Data</td>
-                    <td>✔</td>
-                    <td>✔</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
                 </tr>
                 <tr>
                     <td>Interactive Visualizations</td>
-                    <td>✔</td>
-                    <td>✘</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
                 </tr>
                 <tr>
                     <td>User-Friendly Interface</td>
-                    <td>✔</td>
-                    <td>✘</td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-times"></i></td>
                 </tr>
                 </tbody>
             </table>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+            <a href="#download" class="btn btn-primary">Download Now</a>
         </div>
     </div>
 </section>
@@ -122,19 +157,22 @@
 <section id="download" class="download" data-aos="fade-up">
     <div class="container">
         <h2>Get Started Today</h2>
-        <p>Don’t let battery issues hold you back. Download the Battery Health Report Generator now and take the first step towards smarter, more informed battery management.</p>
+        <p>Don’t let battery issues hold you back. Download the Battery Health Report Generator now and take the first
+            step towards smarter, more informed battery management.</p>
         <div class="download-cards">
             <div class="card">
                 <h3>Version 1.5.0</h3>
                 <p>Latest features and improvements</p>
-                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.5.0" class="btn" target="_blank">
+                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.5.0" class="btn"
+                   target="_blank">
                     <i class="fas fa-download"></i> Download Now v1.5.0
                 </a>
             </div>
             <div class="card">
                 <h3>Version 1.0.0</h3>
                 <p>Older release version</p>
-                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.0.0" class="btn" target="_blank">
+                <a href="https://github.com/arnav003/Battery-Health-Report-Generator/releases/tag/v1.0.0" class="btn"
+                   target="_blank">
                     <i class="fas fa-download"></i> Download Now v1.0.0
                 </a>
             </div>
@@ -145,7 +183,8 @@
 <section class="feedback">
     <div class="container">
         <h2>We Value Your Feedback</h2>
-        <p>Please let us know your thoughts about the Battery Health Report Generator. Your feedback helps us improve!</p>
+        <p>Please let us know your thoughts about the Battery Health Report Generator. Your feedback helps us
+            improve!</p>
         <form id="feedbackForm">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -185,13 +224,33 @@
 <script>
     AOS.init();
 </script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 5000,  // Change this value to set the delay between slides (in milliseconds)
+                disableOnInteraction: false,  // Keeps autoplay running even after user interaction
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+</script>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-    (function(){
+    (function () {
         emailjs.init("eJeRDGA72n-NvJslN");
     })();
 
-    document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    document.getElementById('feedbackForm').addEventListener('submit', function (event) {
         event.preventDefault();
 
         // Get form values
@@ -210,11 +269,11 @@
 
         // Send the email using EmailJS
         emailjs.send('service_zdrlskc', 'template_zbm09yf', templateParams)
-            .then(function(response) {
+            .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 alert('Thank you for your feedback! A copy of your feedback has been emailed to the address you provided.');
                 document.getElementById('feedbackForm').reset();
-            }, function(error) {
+            }, function (error) {
                 console.log('FAILED...', error);
                 alert('Sorry, there was an error sending your feedback. Please try again later.');
             });
